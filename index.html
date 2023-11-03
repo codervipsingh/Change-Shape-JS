@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .triangle-right {
+	width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-left: 50px solid yellow;
+	border-bottom: 25px solid transparent;
+}
+.triangle-down {
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-top: 50px solid blue;
+}
+       .square {
+  height: 80px;
+  width: 80px;
+  background-color: red;
+}
+.circle {
+  height: 50px;
+  width: 50px;
+  background-color: pink;
+  border-radius: 50%;
+}
+
+        .container{
+           
+           background-color: aqua;
+           width: 200px;
+           height: 200px;
+           border-radius: 50%;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           position: relative;
+
+        }
+        button{
+          padding: 5px;
+          margin: 5px;
+        }
+        .content{
+            width: 100%;
+            height: 90vh;
+            flex-direction: column;
+            display: flex;
+           justify-content: center;
+           align-items: center;
+           flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1>Change colour</h1> -->
+<div class="content">
+    <div class="container" id="container">
+        
+    </div>
+    <button id="colorBtn"> Change Color</button>
+    <button id="shapeBtn"> Change Shape</button>
+</div>
+    <script src="./script.js"></script>
+</body>
+</html>
